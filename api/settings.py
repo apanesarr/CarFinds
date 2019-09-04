@@ -41,13 +41,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'carfinds',
     'rest_framework',
-    'rest_framework.authtoken',
     'rest_auth',
+    'rest_framework.authtoken',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'rest_auth.registration',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated', )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

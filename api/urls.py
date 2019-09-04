@@ -18,5 +18,6 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url('admin/', admin.site.urls),
+    url(r'^rest-auth/', include('rest_auth.urls')),
     url(r'^', include('carfinds.urls'))
 ]
