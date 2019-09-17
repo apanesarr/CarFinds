@@ -11,15 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to install Django along with other libraries. Also probably a good idea to run a virtual environment. 
 
 ```
-pip install django
-
-pip install djangorestframework
-
-pip install django-rest-auth
-
-pip install django-allauth
-
-pip install httpie
+pip install -r requirements.txt
 
 ```
 Since the db is not provided you must run migrate to create one. Also need a user to create an auth token. 
