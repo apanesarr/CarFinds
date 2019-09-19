@@ -1,6 +1,6 @@
 # CarFinds
 
-Finds cars from multiple websites to ensure the lowest price. Currently the REST API is the only module that has been implemented. 
+Finds cars from multiple websites to ensure the lowest price. You can try out the demo here: https://apanesarr.github.io/CarFinds-FrontEnd/
 
 ## Getting Started
 
